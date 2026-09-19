@@ -262,3 +262,12 @@ exports.resendConfirmOtp = [
 			return apiResponse.ErrorResponse(res, err);
 		}
 	}];
+
+
+	//Logout API
+	exports.logout = (req, res) => {
+    return apiResponse.successResponse(
+        res,
+        "Logout Success."
+    );
+};
